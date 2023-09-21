@@ -1,2 +1,4 @@
-# aulas-php-poo
- Exemplos de programação orientada a objeto usando PHP (POO)
+# PHO com Orientação a objeto
+
+Utilização do PHP para aplicação de recursos usando os pilares da orientação a pobjetos.
+

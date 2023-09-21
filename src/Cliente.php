@@ -8,6 +8,14 @@ class Cliente {
     public string $senha;
     public array $telefones;
 
+    //Arquivo de class só a class (Cada class um arquivo)
+
+    // Métodos (ou comportamentos)
+    public function exibirDados():void {
+        
+    }
+
 }
 
-//Arquivo de class só a class (Cada class um arquivo)
+
+

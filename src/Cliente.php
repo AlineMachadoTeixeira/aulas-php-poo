@@ -9,3 +9,5 @@ class Cliente {
     public array $telefones;
 
 }
+
+//Arquivo de class só a class (Cada class um arquivo)

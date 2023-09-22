@@ -35,6 +35,25 @@
     <h2>Dados dos objetos</h2>
     <h3><?=$clienteA->nome?></h3>
     <h3><?=$clienteB->nome?></h3>
+
+    <p>E-mail <?=$clienteA->nome?></p>
+    <p>Telefones (acesso um por um):
+       <?=$clienteA->telefones[0]?>, <?=$clienteA->telefones[1]?>,
+    </p>
+
+    <p>Telefone (convertendo para string):
+         <?=implode (", ", $clienteA->telefones)?>,
+    </p>
+
+    <p>Telefones (usando loop):</p>
+    <ul>
+    <?php foreach($clienteA->telefones as $telefone){ ?>
+        <li><?=$telefone?> </li>  
+  
+    <?php
+    }
+    ?>
+    </ul>
     
     <pre>
         <?=var_dump($clienteA, $clienteB)?>

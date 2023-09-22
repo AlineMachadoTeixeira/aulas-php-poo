@@ -3,28 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo</title>
+    <title>Exemplo 04</title>
 </head>
 <body>
-    <h1>PHP com POO - Exemplo 3</h1>
+    <h1>PHP com POO - Exemplo 4</h1>
     <hr>
     <h2>Assuntos abordados:</h2>
     <ul>
-        <li>Método construtor com atribuição obrigatória de valores aos parâmetros/propriedades do objeto</li>
-        <li>Usando do <code>$this</code> para acessar às propriedades dentro do objetos</li>
+        <li>Encapsulamento</li>
+        <li>Modificadores de visibilidade (public, private e protected)</li>
         
     </ul>
 
     <?php   
-    require_once "src/Cliente.php";
-    $clienteA = new Cliente("Fulando", "fulando@gmail.com");
-    $clienteB = new Cliente("Ozzy", "ozzu@msn.com");
+    require_once "src/Cliente.php";  
+    $clienteA = new Cliente;
 
-    $clienteA->telefones =["11-2135-0300"];
+    //Código a baixo vai dar erro pois a propriedade é privada e Não pode alterar fora da classe
+    //$clienteA->nome = "Aline"; 
+
+    // Usando o setter para atribuir um valor à propriedade privada "nome"
+    $clienteA->setNome("Fulando da Silva");
     ?>
     
     <pre>
-        <?= var_dump($clienteA, $clienteB )?>
+        <?=var_dump($clienteA)?>       
     </pre>
 
     

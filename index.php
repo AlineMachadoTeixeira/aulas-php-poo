@@ -12,7 +12,8 @@
     <ul>
         <li>Acesso direto às propriedades</li>
         <li>Atribuição e leitura de dados</li>
-        <li>Chamada de método</li>        
+        <li>Chamada de método</li>  
+        <li>Uso do <code>$this</code> para acessar recurso dentro da própria classe </li>      
     </ul>
 
     <?php   
@@ -34,7 +35,7 @@
     <hr>
     <h2>Dados dos objetos</h2>
     <h3><?=$clienteA->nome?></h3>
-    <h3><?=$clienteB->nome?></h3>
+   
 
     <p>E-mail <?=$clienteA->nome?></p>
     <p>Telefones (acesso um por um):
@@ -54,7 +55,13 @@
     }
     ?>
     </ul>
+
+    <h2>Acessando os dados através de um método</h2>
+    <?=$clienteA->exibirDados()?>
+    <?=$clienteB->exibirDados()?>
     
+
+    <h3><?=$clienteB->nome?></h3>
     <pre>
         <?=var_dump($clienteA, $clienteB)?>
     </pre>

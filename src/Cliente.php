@@ -9,6 +9,10 @@ class Cliente {
     public function setNome(string $nome):void{
         $this->nome = $nome;
     }
+
+    public function getNome():string {
+        return $this->nome;
+    }
     
  
     

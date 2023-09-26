@@ -1,5 +1,9 @@
 <?php
-class Cliente {
+/* Classe Abstrata/abstract
+Não pode ser instanciada, ou seja, não é 
+possível criar um objeto a partir desta classe. Ela é usada apenas como modelo
+para subclasses com herança. */
+abstract class Cliente {
     //Privado o sinal de - (menos) Não pode alterar fora da classe
     private string $nome;
     private string $email;

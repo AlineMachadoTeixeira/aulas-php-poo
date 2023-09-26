@@ -6,6 +6,11 @@ class PessoaFisica extends Cliente{
     private int $idade;
     private string $cpf;
 
+    // Esse é o situação do cliente.php
+    public function __construct(){
+        $this->setSituacao("normal");       
+    }
+
 
     // Para fazer isso usamos a instenção PHP8 and Setters assim não precisa escrever tudo.
     // clique na propriedade $idade; com direito e vai em Isert PHP8  Getter & Setter    

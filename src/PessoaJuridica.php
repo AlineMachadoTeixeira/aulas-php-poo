@@ -5,6 +5,12 @@ class PessoaJuridica extends Cliente{
     private int $anoFundacao;
     private string $cnpj;
     private string $nomeFantasia; 
+
+    // Esse é o $situação do cliente.php
+    public function __construct(){
+        //Acesssando o metodo setter PROTEGIDO (existente em CLIENTE)
+        $this->setSituacao("em análise");       
+    }
     
 
     // Ano Fundacao

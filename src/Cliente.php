@@ -4,6 +4,7 @@ class Cliente {
     private string $nome;
     private string $email;
     private string $senha;
+    private string $situacao = "a definir";
 
     /* Métodos getters e setters */
     public function setNome(string $nome):void{
@@ -40,6 +41,22 @@ class Cliente {
     
    
 
+
+    // Situação vai ser protegido
+    //  Visibilidade protected estes gettrs e setters poderão ser usado APENAS aqui (Classe Cliente) e nas subclasses (PessoaFisica e PessoaJuridica)
+    //public era sim e ficou assim protected 
+    protected function getSituacao(): string
+    {
+        return $this->situacao;
+    }
+
+    
+    protected function setSituacao(string $situacao): self
+    {
+        $this->situacao = $situacao;
+
+        return $this;
+    }
 }
 
 

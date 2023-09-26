@@ -11,7 +11,22 @@
     <h2>Assuntos abordados:</h2>
     <ul>
         <li>Herança (Super Classe e Sub Classe)</li>        
-    </ul>     
+    </ul> 
+    
+    <?php
+    require_once "src/PessoaFisica.php";
+    $clientePF = new PessoaFisica;
+
+    //Colocar um nome no Cliente PF
+    //SET é colocar ou retribuir 
+    $clientePF->setNome("Fulano");
+    $clientePF->setEmail("fulando@gmail.com");
+    $clientePF->setIdade(20);
+    $clientePF->setCpf("383.000.828-26");
+
+    ?>
+
+    <pre><?=var_dump($clientePF)?></pre>
 
     
 </body>

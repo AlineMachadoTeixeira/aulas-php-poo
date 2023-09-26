@@ -17,16 +17,29 @@
     require_once "src/PessoaFisica.php";
     $clientePF = new PessoaFisica;
 
-    //Colocar um nome no Cliente PF
+    //Colocar informação Cliente PF
     //SET é colocar ou retribuir 
     $clientePF->setNome("Fulano");
     $clientePF->setEmail("fulando@gmail.com");
     $clientePF->setIdade(20);
     $clientePF->setCpf("383.000.828-26");
 
+
+    require_once "src/PessoaJuridica.php";
+    $clientePJ = new PessoaJuridica;
+
+    //Colocar informação Cliente PJ
+    $clientePJ->setNome("Beltrano S/A");
+    $clientePJ->setEmail("blablabla@gmail.com");
+    $clientePJ->setAnoFundacao("2000");
+    $clientePJ->setCnpj("32.088.0001/000.41");
+    $clientePJ->setNomeFantasia("Bla Bla Bla Informatica");
+
+
     ?>
 
     <pre><?=var_dump($clientePF)?></pre>
+    <pre><?=var_dump($clientePJ)?></pre>
 
     
 </body>

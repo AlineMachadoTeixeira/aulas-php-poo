@@ -13,6 +13,9 @@
     <h2>Assuntos abordados:</h2>
     <ul>
         <li>Herança (Super Classe e Sub Classe)</li>
+        <li>Métodos/propriedades protegidos (acessíveis apenas pela classe em que foram definidos e pelas subclasses)</li>
+        <li>Classe Abstrata: não permite instâncias/objetos, serve apenas de modelo para subclasses.</li>
+        <li>Classe Final: não permite herança, ou seja, não aceita a criação de subclasses.</li>
     </ul>
 
     <?php

@@ -7,13 +7,10 @@ abstract class Cliente {
     private string $senha;
     private string $situacao = "a definir";
 
-    public function exibirDados():void{
-        echo "<h3>Método exibirDados - classe Cliente</h3>";
-        echo "<h4>$this->nome</h4>";
-           // h4 de cima  ou o h4 de baixo 
-        echo "<h4>" . $this->getNome() . "</h4>";
-
-        echo "<p>Situação: $this->situacao </p>";
+    //Exibir Dados
+    public function exibirDados():void{        
+        echo "<h3>". $this->getNome() ."</h4>";    
+        echo "<p>Situação:" . $this->situacao . "</p>";
         
     }
 

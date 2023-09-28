@@ -4,15 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo 06</title>
+    <title>Exemplo 07</title>
 </head>
 
 <body>
-    <h1>PHP com POO - Exemplo 5</h1>
+    <h1>PHP com POO - Exemplo 7</h1>
     <hr>
     <h2>Assuntos abordados:</h2>
     <ul>
-        
+        <li>Polimorfismo</li>     
+        <li>Sobreposição de métodos</li>   
+        <li>Uso do <code>parent</code> para acessar SuperClasse</li>
     </ul>
 
     <?php

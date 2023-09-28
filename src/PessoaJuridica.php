@@ -12,16 +12,16 @@ class PessoaJuridica extends Cliente{
         $this->setSituacao("em análise");       
     }
     
-    //Exibir dados
-    public function exibirDados(): void{
-        echo "<h3>Método exibirDados - classe PessoaJuridica</h3>";
-        echo "<h4>" . $this->getNome() . "</h4>"; 
-        echo "<p>Situação:" . $this->getSituacao() . "</p>";
-        echo "<p>Nome Fantasia:" . $this->nomeFantasia . "</p>";
-
-        // Usamos getSituacao e na linhas 18 e 19, poís não faz parte dessa class já a linha 20  fizemos $this->nomeFantasia, pois é dessa class, na duvida coloque tudo com get
+    //Exibir Dados
+    public function exibirDados(): void {
+        /* parent::recursos 
+        Permite o acesso aos recursos da classe Pai (SuperClasse) */
+        parent::exibirDados();
+        echo "<p> Nome Fantasia: $this->nomeFantasia </p> "; 
         
     }
+        
+    
 
     // Ano Fundacao
     public function getAnoFundacao(): int

@@ -13,10 +13,37 @@
     <h2>Assuntos abordados:</h2>
     <ul>
         <li>Propriedades e métodos</li>     
-        <li>Acesso direto sem objeto/instâncias</li>        
+        <li>Acesso direto sem objeto/instâncias</li>  
+        <li>Uso de <code>self</code> para acesso (dentro da classe) aos recursos estáticos</li>      
     </ul>   
     
-    
+<?php
+require_once "src/PessoaFisica.php";
+$cliente1 = new PessoaFisica;
+$cliente1->setNome("Astrogildo");
+$cliente1->setIdade(75);
+
+$cliente2 = new PessoaFisica;
+$cliente2->setNome("Enzo");
+$cliente2->setIdade(20);
+
+// Usando os recursos estáticos
+require_once "src/Utilitarios.php";
+Utilitarios::obterData();
+?>
+
+<h2>Atendimento do dia: <?=Utilitarios::$dataAtual?> </h2>
+
+<h3>Cliente: <?=$cliente1->getNome()?></h3>
+<p>Tipo de Atendimento
+    <?= Utilitarios::definirAtendimento( $cliente1->getIdade())?>
+</p>
+
+<h3>Cliente: <?=$cliente2->getNome()?></h3>
+<p>Tipo de Atendimento
+    <?= Utilitarios::definirAtendimento( $cliente2->getIdade())?>
+</p>
+
 
 
 </body>

@@ -17,12 +17,11 @@
         <li>Autoload de classe evitando muitos requires e/ou require manuais</li>  
     </ul>   
 
-    <?php    
-    /*Só de fazer o require_once/importação das classes (SEM NAMESPACE), já dá erro no servidor devido a terem o mesmo nome.  */
+    <?php       
 
     use Fornecedor\Pagamento;
     use Prestador\Pagamento as PrestadorPagamento;    
-    use Tabajara\{MEI, PessoaFisica, PessoaJuridica };
+    use Tabajara\{Escola, MEI, PessoaFisica, PessoaJuridica };
 
     require_once "vendor/autoload.php";
          
@@ -42,6 +41,8 @@
      $tabajaraMEI->setNome("Aline MEI");
      $tabajaraMEI->setAreaDeAtuacao("Artesanato");
 
+
+
    
     $pagamentoFornecedor = new Pagamento;
     $pagamentoPrestador = new PrestadorPagamento;
@@ -51,6 +52,11 @@
     <pre><?=var_dump($pagamentoFornecedor)?></pre>
     <pre><?=var_dump($pagamentoPrestador)?></pre>
 
+    <hr>
+    <?php
+    $escola = new Escola;
+    var_dump($escola);
+    ?>
     
 
      

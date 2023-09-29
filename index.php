@@ -25,6 +25,8 @@
     use Tabajara\MEI;
     use Tabajara\PessoaFisica;
     use Tabajara\PessoaJuridica;
+    /* DE cima usamos o use um por um agora em baixo vamos fazer o use como classe */
+    //use Tabajara\{MEI, PessoaFisica, PessoaJuridica };
 
     require_once "src/fornecedores/Pagamento.php";
     require_once "src/prestadores/Pagamento.php";

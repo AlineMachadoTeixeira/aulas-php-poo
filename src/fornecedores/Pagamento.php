@@ -1,4 +1,4 @@
 <?php //Pasta Fornecedores
-class Pagamento {
+namespace Fornecedor;class Pagamento {
 
 }

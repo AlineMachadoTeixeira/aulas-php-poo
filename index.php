@@ -48,7 +48,11 @@
     <pre><?=var_dump($pagamentoPrestador)?></pre>
 
     <hr>
-    
+
+    <!--  Exercicio 
+     - Criar objeto cliente PF, cliente PJ e cliente MEI
+     - Coloque alguns dados usando setters
+     - Exiba alguns dados no HTML  -->
     
 
 </body>

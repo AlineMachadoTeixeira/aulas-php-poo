@@ -2,7 +2,7 @@
 //Declarando namespace
 namespace Tabajara;
 
-require_once "Cliente.php";
+//require_once "Cliente.php"; Tiramos, pois fizemos o composer.json
 
 class PessoaJuridica extends Cliente{
     private int $anoFundacao;

@@ -2,7 +2,7 @@
 //Declarando namespace
 namespace Tabajara;
 
-require_once "Cliente.php";
+// require_once "Cliente.php"; Tiramos, pois fizemos o composer.json
 
 //extends Cliente é para ligar a tabela PessoaFisica com a tabela Cliente. É tipo a seta (E a tabela PessoaFisica só vai pegar o publico+ da tabela Cliente )  lembra de fazer o require_once "Cliente.php"; para ligar as tabela no visual
 class PessoaFisica extends Cliente{

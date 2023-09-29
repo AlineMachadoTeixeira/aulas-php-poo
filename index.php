@@ -24,21 +24,20 @@
     use Prestador\Pagamento as PrestadorPagamento;    
     use Tabajara\{MEI, PessoaFisica, PessoaJuridica };
 
-    require_once "src/fornecedores/Pagamento.php";
-    require_once "src/prestadores/Pagamento.php";
-    require_once "src/PessoaFisica.php";     
+    require_once "vendor/autoload.php";
+         
      $tabajaraPF = new PessoaFisica; 
      $tabajaraPF->setNome("Aline");
      $tabajaraPF->setIdade(34);
      $tabajaraPF->setCpf("123.123.128-12");
  
-     require_once "src/PessoaJuridica.php";     
+         
      $tabajaraPJ = new PessoaJuridica;
      $tabajaraPJ->setNome("Aline Limitados");
      $tabajaraPJ->setEmail("limitados@gmail");
      $tabajaraPJ->setCnpj("00000000000-0001");    
      
-     require_once "src/MEI.php";    
+         
      $tabajaraMEI = new MEI;
      $tabajaraMEI->setNome("Aline MEI");
      $tabajaraMEI->setAreaDeAtuacao("Artesanato");

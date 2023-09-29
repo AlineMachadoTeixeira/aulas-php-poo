@@ -2,7 +2,7 @@
 //Declarando namespace
 namespace Tabajara;
 
-require_once "PessoaJuridica.php";
+// require_once "PessoaJuridica.php"; Tiramos, pois fizemos o composer.json
 /* Classe Final
 Não permite estender recursos para novas subclasses,
 ou seja, não permite herança. */

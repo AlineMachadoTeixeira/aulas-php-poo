@@ -18,7 +18,11 @@
     </ul>   
 
     <?php    
-    /*Só de fazer o require_once/importação das classes (SEM NAMESPACE), já dá erro no servidor devido a terem o mesmo nome.  */    
+    /*Só de fazer o require_once/importação das classes (SEM NAMESPACE), já dá erro no servidor devido a terem o mesmo nome.  */
+
+    use Fornecedor\Pagamento;
+    use Prestador\Pagamento as PrestadorPagamento;
+
     require_once "src/fornecedores/Pagamento.php";
     require_once "src/prestadores/Pagamento.php";
 
@@ -27,11 +31,15 @@
     //$pagamentoPrestador = new Prestador\Pagamento;
 
     //Forma 2 de usar classe com namespaces
-    use Fornecedor\Pagamento;
-    use Prestador\Pagamento as PrestadorPagamento;
+    //use Fornecedor\Pagamento;
+    //use Prestador\Pagamento as PrestadorPagamento;
                           //as PrestadorPagamento; é um apelido, poís não pode ter o mesmo nome (Pagamento)
+    //$pagamentoFornecedor = new Pagamento;
+    //$pagamentoPrestador = new Prestador\Pagamento // objeto através do alias
+
+    //Forma 3 de usar classe com namespaces 
     $pagamentoFornecedor = new Pagamento;
-    $pagamentoPrestador = new Prestador\Pagamento // objeto através do alias
+    $pagamentoPrestador = new PrestadorPagamento
 
 
     ?>

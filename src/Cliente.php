@@ -1,5 +1,7 @@
 <?php
 
+//Declarando namespace
+namespace Tabajara;
 abstract class Cliente {
     
     private string $nome;

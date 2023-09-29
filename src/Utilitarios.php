@@ -1,4 +1,6 @@
 <?php
+//Declarando namespace
+namespace Tabajara;
 
 class Utilitarios{
     public static string $dataAtual;

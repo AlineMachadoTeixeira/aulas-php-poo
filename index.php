@@ -44,8 +44,6 @@ Utilitarios::obterData();
     <?= Utilitarios::definirAtendimento( $cliente2->getIdade())?>
 </p>
 
-
-
 </body>
 
 </html>
